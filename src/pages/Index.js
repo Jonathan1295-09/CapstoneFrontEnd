@@ -12,7 +12,7 @@ function Index (props){
                     <input type='date' name='End Date' placeholder='End Date'/>
                     <input type='text' name='Notes' placeholder='Notes'/>
                     <input type='text' name='Supplies' placeholder='Supplies'/>
-                    <input type='Image' name='Project name' placeholder='Project Name'/>
+                    <input type='Image' name='ProjectImage' placeholder='Project Name'/>
                 </Form>
         </div>
         {projects.map((project) => <Post key={projects.id} post={project}/>)}
