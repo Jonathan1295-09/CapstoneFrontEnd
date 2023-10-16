@@ -15,7 +15,7 @@ function Index (props){
                     <input type='Image' name='Project name' placeholder='Project Name'/>
                 </Form>
         </div>
-        {project.map((projects) => <Post key={projects.id} post={project}/>)}
+        {projects.map((project) => <Post key={projects.id} post={project}/>)}
     </>
 }
 
