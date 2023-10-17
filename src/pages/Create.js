@@ -1,8 +1,7 @@
-import Post from '../components/Post';
-import { useRouteLoaderData, Form } from 'react-router-dom';
+// import Project from '../components/Navbar';
+import { Form } from 'react-router-dom';
 
-function Index (props){
-    const projects = useRouteLoaderData()
+function Create (props){
     return<>
         <div>
             <h2>Project Planner</h2>
@@ -12,11 +11,12 @@ function Index (props){
                     <input type='date' name='End Date' placeholder='End Date'/>
                     <input type='text' name='Notes' placeholder='Notes'/>
                     <input type='text' name='Supplies' placeholder='Supplies'/>
-                    <input type='Image' name='ProjectImage' placeholder='Project Name'/>
+                    <input type='text' name='ProjectImage' placeholder='Project Name'/>
+                    <button>Create</button>
                 </Form>
         </div>
-        {projects.map((project) => <Post key={projects.id} post={project}/>)}
+        
     </>
 }
 
-export default Index;
+export default Create;

@@ -2,8 +2,8 @@
 
 - **Project Name:** Project Planner
 - **Project By:** Jonathan Casasola
-- [**Link To  Backend GITHUB**] (https://github.com/Jonathan1295-09/CapstoneBackEnd)
-- [**LINK TO DEPLOYED WEBSITE**] (https://capstonefrontend-ifkz.onrender.com)
+- [**Link To  Backend GITHUB**](https://github.com/Jonathan1295-09/CapstoneBackEnd)
+- [**LINK TO DEPLOYED WEBSITE**](https://capstonefrontend-ifkz.onrender.com)
 - **List of technologies used** javascript, css, html, react
 - [**Link to Trello**]
 
