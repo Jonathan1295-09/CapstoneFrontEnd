@@ -6,9 +6,9 @@ function Projects (props){
     const projects = useLoaderData()
 
     return (
-        <div>
+        <div className='allprojects'><Link to={"/"} className='homebutton'>Home</Link>
                 {projects.map((project) => <Post key={project.id} post={project}/>)}
-                <Link to={"/"}>Home</Link>
+                
         </div>
     )
 }
