@@ -10,7 +10,7 @@ export const indexLoader = async () => {
 //Show loader
 export const showLoader = async ({params}) => {
     const id = params.id
-    const response = await fetch(url + id)
+    const response = await fetch(url+"project/"+ id)
     const project = await response.json()
     return project
 }

@@ -1,9 +1,10 @@
 import Navbar from '../components/Navbar';
 
 function Home (){
+
     
     return (
-        <div> <Navbar/>
+        <div className='Header'> <Navbar/>
     <h1>Welcome To Project Planner</h1>
     </div>
     )

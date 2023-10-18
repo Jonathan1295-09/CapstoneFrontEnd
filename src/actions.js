@@ -11,7 +11,7 @@ export const createAction = async({request}) => {
         supplies: formData.get("Supplies"),
         image: formData.get("Image")
     }
-    await fetch(url, {
+    await fetch(url + "project/", {
         method: "post",
         headers: {
             "Content-Type": "application/json"
@@ -39,13 +39,13 @@ export const updateAction = async({request, params}) => {
         },
         body:JSON.stringify(updateProject)
     })
-    return redirect('/projects/:id')
+    return redirect(`/project/${id}`)
 }
 
 export const deleteAction = async({params}) => {
     const id = params.id
     await fetch(url + id, {
-        method: "post"
+        method: "delete"
     })
     return redirect('/')
 }
