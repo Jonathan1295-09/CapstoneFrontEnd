@@ -11,10 +11,11 @@ export const createAction = async({request}) => {
         supplies: formData.get("Supplies"),
         image: formData.get("Image")
     }
-    await fetch(url + "project/", {
+    await fetch(url + "project", {
         method: "post",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
         },
         body:JSON.stringify(newProject)
     })
@@ -32,10 +33,11 @@ export const updateAction = async({request, params}) => {
         supplies: formData.get("Supplies"),
         image: formData.get("Image")
     }
-    await fetch(url + id, {
+    await fetch(url + "project/" + id, {
         method: "put",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
         },
         body:JSON.stringify(updateProject)
     })
@@ -44,8 +46,11 @@ export const updateAction = async({request, params}) => {
 
 export const deleteAction = async({params}) => {
     const id = params.id
-    await fetch(url + id, {
-        method: "delete"
+    await fetch(url + "project/" +id, {
+        method: "delete",
+        headers: {
+            "Access-Control-Allow-Origin": "*"
+        }
     })
-    return redirect('/')
+    return redirect('/project')
 }

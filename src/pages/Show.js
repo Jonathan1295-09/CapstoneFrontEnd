@@ -15,7 +15,7 @@ function Show (props){
                 <h2>{post.image}</h2>
             </div>
                 <h2>Update Project</h2>
-                <Form method="post" action={`/project/${post.id}`} className="show">
+                <Form method="post" action={`/update/${post.id}`} className="show">
                     <div className="Update">
                         <input type="text" name="Project Name" defaultValue={post.project_name}/>
                         <input type="text" name="Start Date" defaultValue={post.start_date}/>
@@ -27,7 +27,7 @@ function Show (props){
                         <button>Update</button>
                 </Form>
                     <div className="deletebutton">
-                        <Form method="post" action={`/project/${post.id}`}>
+                        <Form method="post" action={`/delete/${post.id}`}>
                             <button>Delete</button>
                         </Form>
                     </div>
