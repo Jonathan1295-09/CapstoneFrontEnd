@@ -20,7 +20,7 @@ function Show (props){
                         <input type="text" name="Project Name" defaultValue={post.project_name}/>
                         <input type="text" name="Start Date" defaultValue={post.start_date}/>
                         <input type="text" name="End Date" defaultValue={post.end_date}/>
-                        <input type="text" name="notes" defaultValue={post.notes}/>
+                        <input type="text" name="Notes" defaultValue={post.notes}/>
                         <input type="text" name="Supplies" defaultValue={post.supplies}/>
                         <input type="text" name="Image" defaultValue={post.image}/>
                     </div>
